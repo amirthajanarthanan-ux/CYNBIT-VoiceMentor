@@ -1,7 +1,7 @@
 # CYNBIT VoiceMentor
 ### Local LLM-Powered Voice & Text Interview Assistant
 
-**An AI-powered technical interview practice application built with Python, Streamlit, Ollama and Llama 3.2.**
+An AI-powered technical interview practice application built with Python, Streamlit, Ollama and Llama 3.2.
 
 CYNBIT VoiceMentor helps candidates practise technical interviews through interactive voice and text-based sessions. It generates role-specific interview questions, evaluates candidate responses and provides structured feedback to help improve technical understanding and communication.
 
@@ -25,22 +25,26 @@ The application uses a locally running LLM through Ollama, with a speech-to-text
 
 ## Key Technical Features
 
-**1. Role-Based Interview Question Generation**
+### 1. Role-Based Interview Question Generation
+
 - Generates technical interview questions based on the selected job role.
 - Uses Llama 3.2 through Ollama for question generation.
 - Supports an interactive interview workflow.
 
-**2. AI-Based Answer Evaluation**
+### 2. AI-Based Answer Evaluation
+
 - Evaluates candidate responses using a structured evaluation prompt.
 - Assesses technical correctness, conceptual understanding, communication clarity and answer completeness.
 - Generates strengths, improvement suggestions and improved sample answers.
 
-**3. Voice-Based Interaction**
+### 3. Voice-Based Interaction
+
 - Captures candidate responses through microphone input.
 - Uses Faster-Whisper for speech-to-text transcription.
 - Provides spoken feedback through browser speech synthesis.
 
-**4. Performance Dashboard**
+### 4. Performance Dashboard
+
 - Displays interview progress and evaluation scores.
 - Presents feedback after each response.
 - Maintains interview history within the application session.
@@ -53,13 +57,13 @@ The application uses a locally running LLM through Ollama, with a speech-to-text
                  v
         Streamlit Application
                  |
-          Select Interview Role
+        Select Interview Role
                  |
                  v
         Question Generation
                  |
                  v
-          Ollama / Llama 3.2
+         Ollama / Llama 3.2
                  |
                  v
         Interview Question
@@ -80,7 +84,7 @@ The application uses a locally running LLM through Ollama, with a speech-to-text
                  v
           Answer Evaluation
                  |
-          Ollama / Llama 3.2
+         Ollama / Llama 3.2
                  |
                  v
           Structured Feedback
@@ -88,7 +92,7 @@ The application uses a locally running LLM through Ollama, with a speech-to-text
        +---------+---------+
        |                   |
        v                   v
- Performance Dashboard   Voice Feedback
+Performance Dashboard   Voice Feedback
 ```
 
 ## Answer Evaluation Framework
@@ -104,7 +108,7 @@ The application uses four evaluation dimensions:
 
 The overall score is calculated using a weighted scoring approach.
 
-**Scoring formula:**
+### Scoring Formula
 
 ```python
 overall_score = (
@@ -154,14 +158,14 @@ CYNBIT-VoiceMentor/
 - Llama 3.2 model downloaded
 - Microphone access for voice interaction
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/CYNBIT-VoiceMentor.git
+git clone https://github.com/amirthajanarthanan-ux/CYNBIT-VoiceMentor.git
 cd CYNBIT-VoiceMentor
 ```
 
-### 2. Create a virtual environment
+### 2. Create a Virtual Environment
 
 ```bash
 python -m venv .venv
@@ -173,13 +177,13 @@ Activate on Windows:
 .venv\Scripts\activate
 ```
 
-### 3. Install dependencies
+### 3. Install Dependencies
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-### 4. Download the local language model
+### 4. Download the Local Language Model
 
 ```bash
 ollama pull llama3.2
@@ -191,7 +195,7 @@ Verify the model:
 ollama list
 ```
 
-### 5. Launch the application
+### 5. Launch the Application
 
 ```bash
 streamlit run app_local.py
@@ -215,8 +219,7 @@ Ollama must be running locally while using the application.
 
 ### 3. AI Evaluation and Feedback
 
-![Evaluation](screenshots/!(evaluation.png))
-
+![Evaluation](screenshots/evalution.png)
 
 ## Future Improvements
 
